@@ -8,23 +8,34 @@
 }
 
 body{
-    background-color: #171717;
+    background-color: white;
 }
+
 .container{
+    margin: 0 auto;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    background-color: #171717;
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 30px 70px 50px 70px;
+    margin: 30px 0 50px 0;
+    padding: 0 20px;
+}
+
+header img{
+    width: 234px;
 }
 nav{
     display: flex;
     align-items: flex-end;
-    width: 600px;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -33,6 +44,10 @@ nav ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 400;
+
 }
 
 nav ul:hover{
@@ -47,13 +62,11 @@ nav ul a{
 }
 
 main{
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    margin: 0 50px;
-    margin-bottom: 30px;
     padding: 10px 50px;
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -69,17 +82,9 @@ main{
     width: 400px;
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 90px;
-    line-height: 109px;
+    font-size: 50px;
     text-transform: uppercase;
-    /* identical to box height, or 134% */
-
-    letter-spacing: 0.5px;
-
     color: #FFFFFF;
-
-
-    /* Inside auto layout */
 }
 
 .small-text{
@@ -87,9 +92,18 @@ main{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
+    text-align: justify;
+}
+.imagem-banner{
+    display: flex;
+}
+.imagem-banner img{
+    display: flex;
+    width: 300px;
 }
 
 button{
+    display: flex;
     background-color: #C21E6F;
     width: 229px;
     height: 78px;
@@ -100,19 +114,20 @@ button{
     color: #FFFFFF;
     border-radius: 15px;
     border: none;
+    align-items: center;
+    justify-content: space-evenly;
 }
 hr{
-    display: flex;
-    width: 90%;
+    width: 100%;
     border: 1px solid #C21E6F;
-    margin: 10px auto;;
+    margin: 10px 0;
 }
 
 .equipe{
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 30px 80px;
+    margin: 30px 0;
 }
 .texto-equipe{
     font-family: Inter;
@@ -126,10 +141,11 @@ hr{
 .treinadores{
     display: flex;
     margin-top: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0 10px;
 }
 .treinador img{
-    width: 300px;
+    width: 190px;
 }
 .treinador p{
     margin-top: 20px;
@@ -147,7 +163,6 @@ hr{
     flex-wrap: wrap;
 }
 article{
-    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between  ;
@@ -161,6 +176,7 @@ article .titulo-blog{
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 30px;
+    text-transform: uppercase;
 
 }
 
@@ -170,6 +186,11 @@ article .texto-blog{
     font-size: 14px;
     font-weight: 400;
 
+}
+
+article div img{
+    width: 300px;
+    margin: 0 20px;
 }
 
 article a{
@@ -191,6 +212,7 @@ article a::after{
 }
 
 .titulo{
+    color: #FAFAF9;
     font-family: Inter;
     font-size: 48px;
     font-weight: 600;
@@ -199,31 +221,43 @@ article a::after{
 
 }
 
+.final .imagem{
+    display: flex;
+}
+
+.final .imagem img{
+    margin: 0 auto;
+    width: 90%;
+}
+
 footer{
     width: 100%;
     display: flex;
+    padding: 0 10px;
     margin: 20px auto;
     justify-content: space-around;
     align-items: center;
     color: #FFFFFF;
 }
+
 footer div div img{
     margin-right: 10px;
-    width: 25px;
+    width: 15px;
 }
 .telefone{
     margin-top: 30px;
     display: flex;
 }
 .campo, .info{
+    margin-bottom: 3px;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     text-align: left;
 }
 
 .info{
-    font-size: 22px;
+    font-size: 18px;
 
 }
 
@@ -244,4 +278,18 @@ footer div div img{
 .schedule{
     display: flex;
     flex-direction: row;
+}
+
+.third{
+    display: flex;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.social img{
+    width: 30px;
 }
