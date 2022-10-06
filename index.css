@@ -1,0 +1,235 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 70px 50px 70px;
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+    width: 600px;
+    justify-content: space-around;
+}
+
+nav ul{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul:hover{
+    height: 100%;
+    background-color: #C21E6F;
+    align-items: flex-end;
+}
+
+nav ul a{
+    color: #FAFAF9;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 50px;
+    margin-bottom: 30px;
+    padding: 10px 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.texto-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.big-text{
+    /* text body */
+    width: 400px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 109px;
+    text-transform: uppercase;
+    /* identical to box height, or 134% */
+
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+}
+
+.small-text{
+    color: rgba(239, 237, 232, 0.65);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+button{
+    background-color: #C21E6F;
+    width: 229px;
+    height: 78px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+}
+hr{
+    display: flex;
+    width: 90%;
+    border: 1px solid #C21E6F;
+    margin: 10px auto;;
+}
+
+.equipe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 80px;
+}
+.texto-equipe{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.treinadores{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.treinador img{
+    width: 300px;
+}
+.treinador p{
+    margin-top: 20px;
+   color: #FFFFFF;
+   text-align: center;
+}
+
+.button-equipe{
+    margin: 20px auto;
+    width: 655px;
+}
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between  ;
+    margin: 20px auto;
+    color: #FAFAF9;
+}
+
+article .titulo-blog{
+    width: 526px;
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+article .texto-blog{
+    width: 480px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+article a{
+    display: flex;
+    color: #C21E6F;
+    text-decoration: none;
+    align-items: center;
+}
+
+article a::after{
+    content: "\279F";
+    font-size: 30px;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.titulo{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+}
+footer div div img{
+    margin-right: 10px;
+    width: 25px;
+}
+.telefone{
+    margin-top: 30px;
+    display: flex;
+}
+.campo, .info{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.info{
+    font-size: 22px;
+
+}
+
+.adress{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+.adress div{
+    display: flex;
+    flex-direction: row;
+}
+.adress div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule{
+    display: flex;
+    flex-direction: row;
+}
